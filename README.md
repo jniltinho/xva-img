@@ -9,15 +9,23 @@ Requirements
  * CMake
  * g++ or clang++
  * libssl-dev
- * libxxhash-dev
+ * libxxhash-dev 
  
 To build
 =======
-Install g++ cmake make libssl-dev
+    
+    
+```bash
+# Install g++ cmake make libssl-dev
+sudo apt-get update
+sudo apt-get install -y libssl-dev libxxhash-dev build-essential gcc g++ cmake qemu-utils
 
-    cmake .
-    make
-    make install
+cmake .
+make
+make install    
+```
+    
+
 
 Example
 =======
@@ -30,6 +38,7 @@ Extract the XVA file.
 Extract one of the disks
 
     xva-img -p disk-export my-virtual-machine/Ref\:1/ disk.raw
+    qemu-img convert -f raw disk.raw -O vdi disk.vdi
 
 Splice the disk file (remove all files in the folder, required not to make any unnecessary mistakes)
 
