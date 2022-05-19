@@ -25,8 +25,6 @@ make
 make install    
 ```
     
-
-
 Example
 =======
 Extract the XVA file.
@@ -48,3 +46,14 @@ Splice the disk file (remove all files in the folder, required not to make any u
 Rebuild the XVA file
 
     xva-img -p package my-virtual-machine-fixed.xva my-virtual-machine/ova.xml my-virtual-machine/Ref\:1/
+    
+
+Links
+=======
+
+- https://www.virtuatopia.com/index.php?title=How_to_Convert_a_Xen_Guest_to_VirtualBox
+- https://github.com/bmiddha/xva-convert
+- https://github.com/eriklax/xva-img
+- https://chariotsolutions.com/blog/post/convert-citrix-xenserver-xva-image-to-kvm/
+- https://github.com/derekjhyang/xenserver_to_xen
+- https://www.dark-hamster.com/server/virtualization/use-qcow2-image-virtualbox/
